@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #17202A; /* Dark background color */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .maintenance-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #34495E; /* Darker container background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ECF0F1; /* Light text color */
+        }
+
+        p {
+            color: #BDC3C7; /* Lighter text color */
+        }
+
+        .icon {
+            font-size: 60px;
+            color: #3498DB; /* Blue color for the settings icon */
+            animation: rotate 2s infinite linear;
+        }
+
+        a {
+            color: #E74C3C; /* Red color for the "Go Back" text */
+            text-decoration: none; /* Remove underline */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="icon">&#9881;</div> <!-- Unicode character for a settings icon -->
+        <h1>Under Maintenance</h1>
+        <p>We are currently performing maintenance on our website... <a href="https://gharbari.netlify.app/">Go Back</a>.</p>
+    </div>
+</body>
+</html>
